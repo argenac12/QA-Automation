@@ -10,7 +10,7 @@ def restar(a, b):
 
 def dividir(a, b):
     if b == 0:
-     return 'Error: no se puede dividir por cero'
+     raise ValueError ('Error: no se puede dividir por cero')
     return a // b
 
 def sumar(a, b):
@@ -20,6 +20,7 @@ def multiplicar(a, b):
     return a * b
 
 def calculadora_simple(operacion , a , b):
+
     if operacion == 'sumar':
         return sumar(a,b)
     elif operacion == 'restar':
